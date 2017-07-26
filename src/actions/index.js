@@ -32,7 +32,7 @@ export function infoFetchDataSuccess(data){
 export function fetchWeatherInfo(city=''){
     return function(dispatch){
 
-      dispatch(infoLoading(true));
+      dispatch(infoLoading());
 
       const cityIndex = city.replace(" ", "").toLowerCase(); //index for localStorage
       let data = (localStorage.getItem(cityIndex) !==null) && JSON.parse(localStorage.getItem(cityIndex)),

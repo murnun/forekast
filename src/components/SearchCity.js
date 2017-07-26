@@ -42,8 +42,6 @@ class SearchCity extends Component{
     _close(){
         this.setState({
           showModal: false
-        }, ()=>{
-          console.log(this.state)
         });
     }
 
