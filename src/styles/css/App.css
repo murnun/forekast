@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css?family=Bungee+Shade");
+html, body, #root, .App {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: url("/images/bg.jpg") no-repeat center center fixed;
+  background-size: cover; }
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+#logo {
+  font-family: 'Bungee Shade', cursive;
+  font-size: 6em;
+  text-align: center;
+  margin-top: -35%;
+  margin-bottom: 15%; }
+
+/* Bootstrap overrides */
+.form-group {
+  margin-bottom: 0; }
+
+.input-group-addon {
+  font-size: 25px; }
+
+.form-control {
+  height: 65px;
+  font-size: 35px; }
+
+.btn {
+  padding: 16px 14px;
+  font-size: 22px; }
+
+.input-group-addon, .input-group .form-control {
+  background-color: #000;
+  color: #fff;
+  border-color: transparent;
+  opacity: 0.6; }
+
+.input-group > .form-control:focus, .btn:focus {
+  outline: none !important;
+  border: 0;
+  box-shadow: none; }
+
+#searchBar {
+  width: 50%; }
+
+.resizeModal {
+  margin-top: 35%; }
+
+.modal-body {
+  height: 200px; }
+
+.weatherIcon {
+  width: 120px; }
+
+.weatherTemp {
+  font-size: 3em; }
+
+.weatherDetails {
+  padding-left: 30px; }
+
+.weatherDetails h3 {
+  font-size: 1.3em;
+  text-decoration: underline;
+  margin: 0;
+  padding: 0; }
+
+.weatherDetails p {
+  margin: 3px 0; }
+
+.animate {
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) infinite both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px; }
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0); }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0); }
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0); }
+  40%, 60% {
+    transform: translate3d(4px, 0, 0); } }
