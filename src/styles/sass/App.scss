@@ -19,10 +19,9 @@ html, body, #root, .App{
   font-family: 'Bungee Shade', cursive;
   font-size: 6em;
   text-align: center;
-  margin-top: -35%;
+  margin-top: -25%;
   margin-bottom: 15%;
 }
-
 /* Bootstrap overrides */
 .form-group{
   margin-bottom:0;
@@ -52,9 +51,6 @@ html, body, #root, .App{
 
 #searchBar{
   width: 50%;
-}
-.resizeModal{
-  margin-top: 35%;
 }
 .modal-body{
   height:200px;
@@ -95,5 +91,39 @@ html, body, #root, .App{
   }
   40%, 60% {
     transform: translate3d(4px, 0, 0);
+  }
+}
+/* Large screens */
+@media only screen  and (min-width : 1680px) {
+
+  #logo{
+    margin-top: -25%;
+    margin-bottom: 15%;
+  }
+
+  .resizeModal{
+    margin-top:15%;
+  }
+
+}
+/* iPads (portrait) */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  .resizeModal{
+    margin-top:30%;
+  }
+}
+/* iPhone L */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px){
+  #searchBar{
+    width:95%;
+  }
+  #logo{
+    font-size: 4em;
+  }
+  .resizeModal{
+    margin-top:30%;
+  }
+  .modal-body{
+    height: 340px;
   }
 }
